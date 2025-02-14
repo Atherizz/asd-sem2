@@ -11,6 +11,7 @@
 ## 1. Pemilihan
 
 The solution is implemented in Pemilihan.java, and below is screenshot of the result.
+
 ![Screenshot](img/fungsi.png)
 
 **Brief explanaton:** There are 4 main step: 
@@ -21,6 +22,7 @@ The solution is implemented in Pemilihan.java, and below is screenshot of the re
 
 ## 2. Perulangan
 The solution is implemented in Perulangan.java, and below is screenshot of the result.
+
 ![Screenshot](img/perulangan.png)
 
 
@@ -32,6 +34,7 @@ The solution is implemented in Perulangan.java, and below is screenshot of the r
 
 ## 3. Array
 The solution is implemented in Array.java, and below is screenshot of the result.
+
 ![Screenshot](img/array.png)
 
 **Brief explanaton:** There are 5   main step: 
@@ -43,6 +46,7 @@ The solution is implemented in Array.java, and below is screenshot of the result
 
 ## 4. Fungsi
 The solution is implemented in Fungsi.java, and below is screenshot of the result.
+
 ![Screenshot](img/fungsi.png)
 
 
