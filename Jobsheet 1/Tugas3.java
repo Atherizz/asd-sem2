@@ -24,7 +24,7 @@ public class Tugas3
             System.out.println("3. Menampilkan Jadwal Pada Hari tertentu");
             System.out.println("4. Menampilkan Jadwal Pada Semester tertentu");
             System.out.println("5. Cari jadwal Mata Kuliah");
-            System.out.println("4. Keluar");
+            System.out.println("6. Keluar");
 
             System.out.print("Pilih menu : ");
             menu = sc.nextInt();
