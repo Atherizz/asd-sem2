@@ -39,25 +39,19 @@ public class Tugas3
             showJadwal(matkul, hari, sem, sks);
             break;   
             case 3:
-            String day = jadwalByDay(matkul, hari, sem, sks);
-            System.out.println("Jadwal Pada Hari " + day);
             jadwalByDay(matkul, hari, sem, sks);
             break;
             case 4:
-            int semester = jadwalBySem(matkul, hari, sem, sks);
-            System.out.println("Jadwal Pada Semester " + semester);
             jadwalBySem(matkul, hari, sem, sks);
             break;
             case 5:
-            String mataKuliah = jadwalByMatkul(matkul, hari, sem, sks);
-            System.out.println("Jadwal Matkul " + mataKuliah);
             jadwalByMatkul(matkul, hari, sem, sks);
             break;
             case 6:
             System.out.println("Exit Program");
             return;
             default:
-            System.out.println("Input dari 1 - 5!");
+            System.out.println("Input dari 1 - 6!");
             break;
         }
         
@@ -70,7 +64,7 @@ public class Tugas3
 
     public static void inputJadwal (String [] matkul, String [] hari, int [] sem, int [] sks) {
         for (int i = 0; i < matkul.length; i++) {
-            System.out.println("\nJadwal Kuliah ke " + (i+1));
+            System.out.println("Jadwal Kuliah ke " + (i+1));
             
             System.out.print("matkul : ");
             matkul[i] = sc.nextLine();
@@ -87,38 +81,38 @@ public class Tugas3
     }
 
     public static void showJadwal(String [] matkul, String [] hari, int [] sem, int [] sks) {
+        if (matkul[0] == null) {
+            System.out.println("Jadwal Kosong! input jadwal terlebih dahulu!");
+        } else {
         for (int i = 0; i < matkul.length; i++) {
-            System.out.println("Jadwal Kuliah ke " + (i+1) + " : ");
-            System.out.print("matkul : " + matkul[i] + " | " );
-            System.out.print("hari : " + hari[i] + " | " );
-            System.out.print("semester : " + sem[i] + " | " );
-            System.out.print("SKS : " + sks[i]);
-            System.out.println(); 
+                System.out.print("matkul : " + matkul[i] + " | " );
+                System.out.print("hari : " + hari[i] + " | " );
+                System.out.print("semester : " + sem[i] + " | " );
+                System.out.print("SKS : " + sks[i]);
+                System.out.println(); 
         }
+    }
     }
 
     public static String jadwalByDay(String [] matkul, String [] hari, int [] sem, int [] sks) {
         System.out.print("Masukkan hari yang dipilih : ");
-        String day = sc.next();
+        String day = sc.nextLine();
 
         boolean isFound = false;
 
         while (!day.equalsIgnoreCase("senin") && !day.equalsIgnoreCase("selasa") && !day.equalsIgnoreCase("rabu") 
         && !day.equalsIgnoreCase("kamis") && !day.equalsIgnoreCase("jumat")) {
-        System.out.println("Masukkan hari yang valid!");
-        day = sc.next();
+        System.out.print("Masukkan hari yang valid! : ");
+        day = sc.nextLine();
     }
         for (int i = 0; i < matkul.length; i++) {
             if (day.equalsIgnoreCase(hari[i])) {
                 isFound = true;
-                System.out.println("Jadwal Kuliah ke " + (i+1) + " : ");
                 System.out.print("matkul : " + matkul[i] + " | " );
-                System.out.print("hari : " + hari[i] + " | " );
                 System.out.print("semester : " + sem[i] + " | " );
                 System.out.print("SKS : " + sks[i]);
+                System.out.println();
             }
-
-            System.out.println(); 
         }
 
         if (!isFound) {
@@ -128,25 +122,23 @@ public class Tugas3
     }
 
     public static int jadwalBySem(String [] matkul, String [] hari, int [] sem, int [] sks) {
-        System.out.println("Masukkan Semester : ");
+        System.out.print("Masukkan Semester : ");
         int semester = sc.nextInt();
         boolean isFound = false;
 
         while (semester < 0 || semester > 8 ) {
-        System.out.println("Masukkan hari yang valid!");
+        System.out.print("Masukkan hari yang valid!");
         semester = sc.nextInt();
     }
         for (int i = 0; i < matkul.length; i++) {
             if (semester == sem[i]) {
                 isFound = true;
-                System.out.println("Jadwal Kuliah ke " + (i+1) + " : ");
                 System.out.print("matkul : " + matkul[i] + " | " );
                 System.out.print("hari : " + hari[i] + " | " );
-                System.out.print("semester : " + sem[i] + " | " );
                 System.out.print("SKS : " + sks[i]);
+                System.out.println();
             }
 
-            System.out.println(); 
         }
         if (!isFound) {
             System.out.println("Jadwal tidak ditemukan");
@@ -155,24 +147,24 @@ public class Tugas3
     }
 
     public static String jadwalByMatkul(String [] matkul, String [] hari, int [] sem, int [] sks) {
-        System.out.println("Masukkan nama mata kuliah : ");
-        String mataKuliah = sc.nextLine();
+        System.out.print("Masukkan nama mata kuliah : ");
+        sc.nextLine();
+        String mataKuliah = sc.nextLine().trim();
 
         boolean isFound = false;
 
         for (int i = 0; i < matkul.length; i++) {
             if (mataKuliah.equalsIgnoreCase(matkul[i])) {
                 isFound = true;
-                System.out.println("Jadwal Kuliah ke " + (i+1) + " : ");
-                System.out.print("matkul : " + matkul[i] + " | " );
                 System.out.print("hari : " + hari[i] + " | " );
                 System.out.print("semester : " + sem[i] + " | " );
                 System.out.print("SKS : " + sks[i]);
+                
             }
 
             System.out.println(); 
         }
-        if (!isFound) {
+        if (isFound == false) {
             System.out.println("Mata kuliah tidak ditemukan / tidak ada jadwal mata kuliah");
         }
         return mataKuliah;
