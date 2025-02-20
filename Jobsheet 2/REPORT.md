@@ -20,7 +20,9 @@
 - memiliki property
 2. Terdapat 4 atribut, diantaranya nim, nama, kelas, ipk
 3. Terdapat 4 method, diantaranya tampilkanInformasi, ubahKelas, updateIpk, nilaiKerja
-4. ![Screenshot](img/pertanyaan4.png)
+
+4.
+ ![Screenshot](img/pertanyaan4.png)
 5. Cara kerja method nilaiKinerja adalah membandingkan value dari atribut ipk yang diinputkan oleh user di class main dan me return string sesuai kondisi yang telah ditentukan
 
 
