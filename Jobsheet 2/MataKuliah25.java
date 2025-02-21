@@ -1,9 +1,9 @@
+
 class MataKuliah25 {
     String kodeMk, nama;
     int sks, jumlahJam;
 
     MataKuliah25() {
-
     }
     
     MataKuliah25(String kodeMk, String nama, int sks, int jumlahJam) {
@@ -28,6 +28,14 @@ class MataKuliah25 {
         this.jumlahJam += jam;
     }
 
+    String getMatkul () {
+        return this.nama;
+    }
+
+    int getSks () {
+        return this.sks;
+    }
+
     void kurangiJam (int jam) {
         if (jam > this.jumlahJam) {
             System.out.println("Jumlah jam tidak valid! Harus antara 0 - " + this.jumlahJam);
@@ -35,8 +43,5 @@ class MataKuliah25 {
         }
         this.jumlahJam -= jam;
     }
-
-
-    
 }
 

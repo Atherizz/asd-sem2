@@ -1,16 +1,20 @@
+import java.util.ArrayList;
+
 class Mahasiswa {
     String nim,nama,kelas;
     double ipk;
+    ArrayList<MataKuliah25> mkList;
 
     Mahasiswa (String nm, String nim, double ipk, String kls) {
         nama = nm;
         this.nim = nim;
         this.ipk = ipk;
         kelas = kls;
+        this.mkList = new ArrayList<>();
     }
 
     Mahasiswa () {
-
+        this.mkList = new ArrayList<>();
     }
 
     void tampilkanInformasi() {
@@ -18,6 +22,23 @@ class Mahasiswa {
         System.out.println("nama : " + nama);
         System.out.println("kelas : " + kelas);
         System.out.println("ipk : " + ipk);
+        for(int i = 0; i < this.mkList.size(); i++) {
+            MataKuliah25 mk = this.mkList.get(i);
+            System.out.println("Mata Kuliah : " + mk.getMatkul() + "|| SKS : " + mk.getSks());
+        }
+    }
+
+    void tambahMatkul (MataKuliah25 mk) {
+        this.mkList.add(mk);
+    }
+
+    void hapusMatkul (String namaMatkul) {
+        try {
+            this.mkList.removeIf(mk -> mk.getMatkul().equalsIgnoreCase(namaMatkul));
+        } catch (Exception e) {
+            System.out.println("Mata Kuliah tidak ditemukan!");
+            return;
+        }
     }
 
     void ubahKelas(String kelasBaru) {
@@ -32,6 +53,8 @@ class Mahasiswa {
         this.ipk = ipkBaru;
         }
     }
+
+
 
     String nilaiKinerja () {
         if (ipk >= 3.5) {
