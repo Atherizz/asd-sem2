@@ -5,7 +5,7 @@ class MataKuliah25 {
     MataKuliah25() {
 
     }
-
+    
     MataKuliah25(String kodeMk, String nama, int sks, int jumlahJam) {
         this.kodeMk = kodeMk;
         this.nama = nama;   
@@ -29,6 +29,10 @@ class MataKuliah25 {
     }
 
     void kurangiJam (int jam) {
+        if (jam > this.jumlahJam) {
+            System.out.println("Jumlah jam tidak valid! Harus antara 0 - " + this.jumlahJam);
+            return;
+        }
         this.jumlahJam -= jam;
     }
 

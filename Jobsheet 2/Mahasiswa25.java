@@ -9,6 +9,10 @@ class Mahasiswa {
         kelas = kls;
     }
 
+    Mahasiswa () {
+
+    }
+
     void tampilkanInformasi() {
         System.out.println("nim : " + nim);
         System.out.println("nama : " + nama);
@@ -22,7 +26,8 @@ class Mahasiswa {
 
     void updateIpk(double ipkBaru) {
         if (ipkBaru > 4.0 || ipkBaru < 0) {
-        System.out.println("IPK tidak valid! Harus anatara 0.0 - 4.0");
+        System.out.println("IPK tidak valid! Harus antara 0.0 - 4.0");
+        return;
         } else {
         this.ipk = ipkBaru;
         }
