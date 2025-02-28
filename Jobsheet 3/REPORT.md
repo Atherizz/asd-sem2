@@ -90,6 +90,12 @@ for (int i = 0; i < arrayOfMahasiswa.length; i++) {
 
 **Tugas 2**
 
+**Output Program**
+
+ ![Screenshot](img/tugasinput.png)
+
+ ![Screenshot](img/tugasoutput.png)
+
 **Penjelasan Kode:**
 
 1. **Deklarasi Atribut**  
