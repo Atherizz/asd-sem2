@@ -9,7 +9,6 @@ public class MahasiswaDemo25 {
 
         for (int i = 0; i < arrayOfMahasiswa.length; i++) {
             arrayOfMahasiswa[i] = new Mahasiswa25();
-
             System.out.println("Masukkan data Mahasiswa ke-" + (i + 1));
             System.out.print("Nama: ");
             arrayOfMahasiswa[i].name = sc.nextLine();   

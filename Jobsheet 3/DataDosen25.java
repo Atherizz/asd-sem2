@@ -9,8 +9,8 @@ public class DataDosen25 {
     }
 
     void dataSemuaDosen (Dosen25[] arrayOfDosen) {
-        for (Dosen25 dsn : arrayOfDosen) {
             int i = 0;
+        for (Dosen25 dsn : arrayOfDosen) {
             System.out.println("Data Dosen ke -" + (i+1));
             System.out.println("Kode : " + dsn.kode);
             System.out.println("Nama : " + dsn.nama);
@@ -18,6 +18,7 @@ public class DataDosen25 {
             System.out.println("Jenis Kelamin : " + this.gender[i]);
             System.out.println("Usia : " + dsn.usia);
             System.out.println("--------------------------------------");
+            i++;
         }
     }
 
@@ -43,8 +44,10 @@ public class DataDosen25 {
                 totalUsiaWanita += arrayOfDosen[i].usia;
             }
         }
-        double rerataUsiaPria = totalUsiaPria / this.dosenPria;
-        double rerataUsiaWanita = totalUsiaWanita / this.dosenWanita;
+        
+        double rerataUsiaPria = (this.dosenPria > 0) ? (double) totalUsiaPria / this.dosenPria : 0;
+        double rerataUsiaWanita = (this.dosenWanita > 0) ? (double) totalUsiaWanita / this.dosenWanita : 0;
+        
 
         System.out.println("Rata - Rata Usia Dosen Pria : " + rerataUsiaPria);
         System.out.println("Rata - Rata Usia Dosen Wanita : " + rerataUsiaWanita);
