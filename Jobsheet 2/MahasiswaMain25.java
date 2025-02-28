@@ -16,7 +16,8 @@ public class MahasiswaMain25 {
 
         Mahasiswa mhs2 = new Mahasiswa("Opang", "24410702036", 3.5, "TI-1H");
         mhs2.tambahMatkul(mk);
-        mhs2.hapusMatkul("Algoritma Struktur sata");
+        mhs2.tambahMatkul(mk2);
+        mhs2.hapusMatkul("Algoritma Struktur Data");
 
 
         mhs2.tampilkanInformasi();

@@ -33,11 +33,9 @@ class Mahasiswa {
     }
 
     void hapusMatkul (String namaMatkul) {
-        try {
-            this.mkList.removeIf(mk -> mk.getMatkul().equalsIgnoreCase(namaMatkul));
-        } catch (Exception e) {
+         boolean removed = this.mkList.removeIf(mk -> mk.getMatkul().equalsIgnoreCase(namaMatkul));
+        if (!removed) {
             System.out.println("Mata Kuliah tidak ditemukan!");
-            return;
         }
     }
 
