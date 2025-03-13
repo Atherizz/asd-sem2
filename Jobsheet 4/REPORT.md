@@ -48,6 +48,7 @@ menggunakan pemanggilan fungsi rekursif faktorialDC dengan argumen n-1, kemudian
 
 ### 5.3.3 Pertanyaan
 1. Perbedaan `pangkatBF`dan `pangkatDC`
+
 a. method `pangkatBF` menggunakan pendekatan iteratif (Brute Force) dengan melakukan operasi perkalian sebanyak `n` kali
 
 b. method `pangkatDC` menggunakan pendekatan rekursif (Divide and Conquer) dengan membagi masalah menjadi dua submasalah yang lebih kecil dan menggabungkan hasilnya, sehingga lebih efisien untuk nilai `n` yang besar.
@@ -65,7 +66,7 @@ b. method `pangkatDC` menggunakan pendekatan rekursif (Divide and Conquer) denga
         return result;
     }
 ```
-4. Cara Kerja Method
+4.Cara Kerja Method
 
 a. Method `pangkatBF()`: Method pangkatBF bekerja dengan melakukan operasi perkalian sebanyak n kali, dimulai dari result yang bernilai 1 dan mengalikannya dengan a pada setiap iterasi hingga n iterasi selesai
 
@@ -73,4 +74,25 @@ b. Method `pangkatDC()`: Method pangkatDC bekerja dengan membagi masalah menjadi
 
 ## Percobaan 3 - Menghitung Sum Array
 
+### 5.4.2 Verifikasi Hasil Percobaan 
+
+ ![Screenshot](img/keuntungan.png)
+
+ ### 5.4.3 Pertanyaan
+
+1. Karena variabel `mid` digunakan untuk mengambil nilai tengah dari array yang akan dibagi menjadi 2 supaya pembagian kedua bagian array rata jumlahnya. Value dari variabel mid akan terus berubah seiring berjalannya rekursif hingga mencapai base case
+
+2. `leftSum` dan `rightSum` digunakan untuk melakukan recursive call dengan mendeklarasikan dua variabel yaitu untuk menyimpan bagian kiri dan kanan sebuah potongan array
+
+3. Penjumlahan `leftSum` dan `rightSum` diperlukan untuk menggabungkan hasil perhitungan total nilai elemen di bagian kiri dan kanan subarray, sehingga mendapatkan total nilai elemen dalam subarray secara keseluruhan.
+
+4. Base Case pada method tersebut adalah ketika nilai variabel `l` dan `r` sama, lalu mengembalikan nilai yang ada pada elemen  `l` atau `r`
+
+```java
+ if (l == r) {
+            return arr[l];
+        }
+```
+
+5. Metode `totalDC()` bekerja dengan cara membagi subarray menjadi dua bagian, menghitung total nilai elemen di setiap bagian secara rekursif, dan kemudian menjumlahkan hasilnya untuk mendapatkan total nilai elemen dalam subarray secara keseluruhan.
 
