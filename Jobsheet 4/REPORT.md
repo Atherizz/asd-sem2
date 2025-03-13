@@ -96,3 +96,25 @@ b. Method `pangkatDC()`: Method pangkatDC bekerja dengan membagi masalah menjadi
 
 5. Metode `totalDC()` bekerja dengan cara membagi subarray menjadi dua bagian, menghitung total nilai elemen di setiap bagian secara rekursif, dan kemudian menjumlahkan hasilnya untuk mendapatkan total nilai elemen dalam subarray secara keseluruhan.
 
+## Latihan Praktikum
+
+#### a) `nilaiUtsTertinggi`
+- **Langkah-langkah**:
+  1. Jika hanya ada satu mahasiswa, kembalikan mahasiswa tersebut.
+  2. Bagi array mahasiswa menjadi dua bagian.
+  3. Cari nilai UTS tertinggi di kedua bagian.
+  4. Bandingkan hasil dari kedua bagian dan kembalikan yang tertinggi melalui recursive call.
+
+#### b) `nilaiUtsTerendah`
+- **Langkah-langkah**:
+  1. Jika hanya ada satu mahasiswa, kembalikan mahasiswa tersebut.
+  2. Bagi array mahasiswa menjadi dua bagian.
+  3. Cari nilai UTS terendah di kedua bagian.
+  4. Bandingkan hasil dari kedua bagian dan kembalikan yang terendah melalui recursive call.
+
+#### c) `rataRataUas`
+- **Langkah-langkah**:
+  1. Inisialisasi jumlah total nilai UAS.
+  2. Iterasi melalui semua mahasiswa dan tambahkan nilai UAS ke total.
+  3. Bagi total nilai UAS dengan jumlah mahasiswa untuk mendapatkan rata-rata.
+
