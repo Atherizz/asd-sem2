@@ -9,7 +9,7 @@ public class DataDosen25 {
     }
 
     void dataSemuaDosen (Dosen25[] arrayOfDosen) {
-            int i = 0;
+        int i = 0;
         for (Dosen25 dsn : arrayOfDosen) {
             System.out.println("Data Dosen ke -" + (i+1));
             System.out.println("Kode : " + dsn.kode);

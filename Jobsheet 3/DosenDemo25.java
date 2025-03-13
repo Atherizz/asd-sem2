@@ -8,8 +8,8 @@ public class DosenDemo25 {
         System.out.print("Masukkan jumlah dosen : ");
         int jumlahDosen = sc.nextInt();
 
-        Dosen25 [] arrayOfDosen25 = new Dosen25[jumlahDosen];
-        
+        Dosen25[] arrayOfDosen25 = new Dosen25[jumlahDosen];
+
         for (int i = 0; i < arrayOfDosen25.length; i++) {
             System.out.println("Data Dosen ke -" + (i + 1));
             arrayOfDosen25[i] = new Dosen25();
