@@ -98,6 +98,8 @@ b. Method `pangkatDC()`: Method pangkatDC bekerja dengan membagi masalah menjadi
 
 ## Latihan Praktikum
 
+ ![Screenshot](img/output.png)
+
 #### a) `nilaiUtsTertinggi`
 - **Langkah-langkah**:
   1. Jika hanya ada satu mahasiswa, kembalikan mahasiswa tersebut.
