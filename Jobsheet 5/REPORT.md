@@ -72,6 +72,46 @@ c. Perulangan i akan terjadi sebanyak 49 kali (50-1). Pada setiap tahap iterasi 
  ![Screenshot](img/selectbefore.png)
   ![Screenshot](img/selectafter.png)
 
+### 5.3.6 Pertanyaan
+1. Blok kode tersebut digunakan untuk mencari nilai terkecil pada suatu iterasi `j` dengan melakukan pengecekan antara atribut ipk pada array objek `listMhs[j]` dengan `listMhs[idxMin]`. Jika `listMhs[j]` maka value dari `idxMin` akan diisi dengan nilai `j`. Setelah melakukan pengecekan sampai akhir iterasi, elemen pada indeks `i` akan ditukar dengan elemen pada indeks `idxMin` agar elemen dengan nilai terkecil berada pada posisi yang benar dalam urutan yang diinginkan. Proses ini akan diulangi untuk setiap indeks `i`
+
+### 5.4 Mengurutkan Data Mahasiswa menggunakan Insertion Sort
+
+### 5.4.2 Verifikasi Hasil Percobaan 
+ ![Screenshot](img/insertbefore.png)
+  ![Screenshot](img/insertafter.png)
+
+### 5.4.3 Pertanyaan
+
+Insertion Sort Descending
+
+```java
+    void insertionSortDescending() {
+        for (int i = 1; i < listMhs.length; i++) {
+            Mahasiswa temp = listMhs[i];
+            int j = i-1;
+            while (j >= 0 && listMhs[j].ipk < temp.ipk) {
+                listMhs[j+1] = listMhs[j];
+                j--;
+            }
+            listMhs[j+1] = temp;
+        }
+    }
+}
+```
+
+### 5.5 Latihan Praktikum
+
+### Output Program
+
+ ![Screenshot](img/output.png)
+  ![Screenshot](img/output2.png)
+   ![Screenshot](img/output3.png)
+
+
+
+
+
 
 
 
