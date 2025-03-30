@@ -6,7 +6,7 @@
 | Kelas | TI - 1H |
 | Repository | [https://github.com/Atherizz/asd-sem2/tree/main/Jobsheet%205]  |
 
-# Labs #4 SORTING (BUBBLE, SELECTION, DAN INSERTION SORT)
+# Labs #5 SORTING (BUBBLE, SELECTION, DAN INSERTION SORT)
 
 ## Percobaan 1 - Mengimplementasikan Sorting menggunakan object
 
