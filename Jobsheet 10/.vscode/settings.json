@@ -1,0 +1,8 @@
+{
+    "discord.enabled": true,
+    "discord.detailsIdling": "Turu",
+    "discord.workspaceExcludeFolders": true,
+    "discord.customWorkspace": {
+  "*": ""
+}
+}
