@@ -59,8 +59,6 @@ class AntrianKrs {
                 size--;
                 mhsDilayani++;
             }
-
-
             return mhs;
         }
 
