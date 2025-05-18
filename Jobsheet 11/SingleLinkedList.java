@@ -81,6 +81,10 @@ public class SingleLinkedList {
         for (int i = 0; i < index; i++) {
             tmp = tmp.next;
         }
+
+        if (tmp == null) {
+            System.out.println("");
+        }
         tmp.data.tampilInformasi();
     }
 

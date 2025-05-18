@@ -4,7 +4,7 @@
 | NIM |  244107020116|
 | Nama |  Savero Athallah Hardiana Putra |
 | Kelas | TI - 1H |
-| Repository | [https://github.com/Atherizz/asd-sem2/tree/main/Jobsheet%211]|
+| Repository | [https://github.com/Atherizz/asd-sem2/tree/main/Jobsheet%2011]|
 
 # Labs #10 Linked List
 
@@ -52,31 +52,46 @@
 
 ### 2.2.2 Verifikasi Hasil Percobaan 
 
-  ![Screenshot](img/output2_1.png)
-    ![Screenshot](img/output2_2.png)
+  ![Screenshot](img/output2.png)
+
 
 ### 2.2.3 Pertanyaan
 
-Modifikasi Program
-```java
+1. keyword `break` pada method `remove` digunakan untuk keluar dari perulangan ketika salah satu dari kondisi tersebut sudah terpenuhi
 
-            void lihatAkhir() {
-            if (isEmpty()) {
-                System.out.println("antrian kosong");
-            } else {
-                System.out.println("Mahasiswa terakhir : ");
-                System.out.println("NIM - NAMA - PRODI - KELAS");
-                data[rear].tampilkanData();
-            }
-        }
-  ```
+2. Kode Program
+```java
+                    temp.next = temp.next.next;
+                    if (temp.next == null) {
+                        tail = temp;
+                    }
+```
+Kode di atas merupakan proses memutus node setelah pointer `temp` dengan cara mengubah nilai attribut `next` menjadi objek setelah `temp.next`. Dan jika `temp.next` == `null` itu berarti data yang mau diubah berada pada posisi `tail` sehingga `tail` perlu diubah menjadi `temp` yang merupakan data sebelum `temp.next`.
 
 ## Tugas
 
 ### Contoh Output 
 
-  ![Screenshot](img/tugas1.png)
-    ![Screenshot](img/tugas2.png)
-      ![Screenshot](img/tugas3.png)
-        ![Screenshot](img/tugas4.png)
-          ![Screenshot](img/tugas5.png)
+#### Menambahkan antrian
+  ![Screenshot](img/add.png)
+
+#### Menampilkan seluruh antrian
+  ![Screenshot](img/semua.png)
+
+#### Menampilkan antrian terdepan
+  ![Screenshot](img/terdepan.png)
+
+#### Menampilkan antrian terakhir
+  ![Screenshot](img/terakhir.png)
+
+#### Menampilkan jumlah antrian, antrian kosong & penuh
+  ![Screenshot](img/antrian.png)
+
+#### Memanggil antrian
+  ![Screenshot](img/panggil.png)
+
+#### Mengosongkan antrian
+  ![Screenshot](img/kosong.png)
+
+
+
