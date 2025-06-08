@@ -9,5 +9,4 @@ public class Node25 {
     this.next = null;
    }
 
-   
 }

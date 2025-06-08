@@ -1,4 +1,4 @@
-public class DoubleLinkedList {
+    public class DoubleLinkedList {
     Node25 head;
     Node25 tail;
 
